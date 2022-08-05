@@ -222,7 +222,9 @@ h4{
     row-gap: 10px;
     padding: 10px;
 }
-
+.img-noticia:hover{
+    transform: scale(1.2,1.2);
+}
 
 
 /* CSS Estadio */
@@ -258,6 +260,9 @@ footer{
     align-items: center;
     row-gap: 20px;
 }
+.img-estadio img:hover{
+    transform: scale(1.2,1.2);
+}
 
 .video-estadio{
     grid-area: video-estadio;
@@ -292,6 +297,9 @@ footer{
     align-items: center;
     row-gap: 10px;
 }
+.img-malvicino img:hover{
+    transform: scale(1.2,1.2);
+}
 
 /* CSS Fixture */
 .gridContainerFixture{
@@ -313,6 +321,9 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.partido:hover{
+    background-color: rgb(170, 165, 165);
 }
 .club1{
     display: flex;
@@ -412,6 +423,9 @@ footer p{
     display: flex;
     width: 90%;
     justify-content: end;
+}
+.redes-sociales .imagen:hover{
+    transform: scale(1.5,1.5);
 }
 
 .imagen{
