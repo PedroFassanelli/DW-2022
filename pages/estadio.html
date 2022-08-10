@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto&family=Open+Sans:wght@300&display=swap" rel="stylesheet">    
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Mi CSS -->
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Estadio 15 de Abril</title>
 </head>
@@ -17,20 +20,34 @@
                 <img src="../Media/tate.png" width="100px" alt="Escudo de Union de Santa Fe">
                 <h1><a href="index.html">Club Atlético UNIÓN DE SANTA FE</a></h1>
             </section>
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="noticias.html">Noticias</a></li>
-                    <li><a href="">Estadios</a>
-                        <ul>
-                            <li><a href="estadio.html">Estadio 15 de Abril</a></li>
-                            <li><a href="estadio2.html">Estadio Malvicino</a></li>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../Media/home.png" alt="" width="40"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="noticias.html">Noticias</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estadios</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="estadio.html">Estadio 15 de Abril</a></li>
+                                    <li><a class="dropdown-item" href="estadio2.html">Estadio Malvicino</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="fixture.html">Fixture</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li><a href="fixture.html">Fixture</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                    </div>
+                </div>
+            </nav>   
         </header>
         <div class="titulo-estadio">
             <h2>Estadio 15 de Abril</h2>
@@ -41,11 +58,39 @@
             <p>El recinto lleva su nombre en homenaje a la fecha de fundación del club, fue el primero de cemento y con iluminación artificial en la región. Actualmente, cuenta con una capacidad aproximada para 30 000 personas.</p>  
     
             <p>El estadio 15 de abril fue la cuarta y última mudanza que tuvo Unión que, durante sus dos primeras décadas de vida, había pasado por dos campos de juego propios. El primero fue la ya inexistente plaza Santa Coloma, el segundo donde actualmente funciona el Colegio Nuestra Señora del Calvario en la intersección de las calles Urquiza y Suipacha; mientras que el tercero fue donde hoy se emplaza el rectorado de la Universidad Nacional del Litoral en Boulevard Pellegrini y San Jerónimo.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequuntur porro ipsa? Eos, ut iure. Nostrum neque explicabo optio sunt debitis sed, veritatis sint necessitatibus modi sapiente ducimus voluptatibus consectetur reiciendis fugiat natus corrupti repellat quisquam ab hic beatae voluptate minus magnam vero officia! Numquam magni odio in obcaecati error consequuntur. Libero illum, enim exercitationem consectetur eum cumque, eos facilis recusandae provident mollitia unde perferendis explicabo maiores vitae molestias pariatur magni et possimus, impedit iure maxime dolores quasi! Quam mollitia minus ipsa eius molestiae nemo quasi, vel nostrum necessitatibus sapiente explicabo alias sint cupiditate ratione et hic eligendi? Laboriosam perferendis quasi cumque voluptate recusandae error labore itaque! Quisquam eos officia incidunt eaque odit, perferendis rerum! Assumenda suscipit odit quas quis amet molestias magnam iure quisquam eius at, neque unde voluptas, quam repudiandae incidunt, deserunt provident soluta perspiciatis. Dicta fugit voluptatibus, totam dolor a delectus dolorum error labore similique aut possimus ducimus officiis sit ea ratione eaque praesentium molestias placeat. Atque, deserunt reiciendis! Soluta porro blanditiis aut quia numquam accusantium sed, maiores officiis, quas ea nihil fuga, earum necessitatibus magni accusamus amet corporis dolores! Deleniti voluptate, aspernatur quos sapiente adipisci nobis, modi voluptas eaque similique doloremque, asperiores mollitia perspiciatis aut tenetur.</p>
         </div>
         <div class="img-estadio">
             <img src="../Media/estadio1.jfif" alt="estadio" width="300px" height="200px">
             <img src="../Media/estadio2.jpg" alt="estadio" width="300px" height="200px">
         </div>
+
+        <div class="car-estadio">
+            <div id="carouselEstadio" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../Media/estadio/carrusel1.jpg" class="d-block " alt="estadio1" width="480px" height="360px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Media/estadio/carrusel2.jpeg" class="d-block " alt="estadio2" width="480px" height="360px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Media/estadio/carrusel3.jpg" class="d-block " alt="estadio3" width="480px" height="360px">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstadio" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEstadio" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+
         <div class="video-estadio">
             <iframe width="650" height="450" src="https://www.youtube.com/embed/egwzi53nq2c" title="#SedesEn1Minuto Estadio 15 de Abril de Unión (Santa Fe)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -61,5 +106,7 @@
             </div>
         </footer>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

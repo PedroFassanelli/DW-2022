@@ -37,63 +37,44 @@ header a{
     text-decoration: none;
 }
 
+/*
 nav{
     background-color: #EE0101;
     padding: 0;
 }
+*/
 
-.menu{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-
-}
-
-.menu li{
+/* Nav Bootstrap */
+.navbar{
     text-align: center;
     padding: 10px;
-    width: 100%;
     font-size: 2rem;
+    background-color: #EE0101;
 }
-
-.menu li a{
-    text-decoration: none;
+.navbar a{
     color: white;
 }
-
-.menu ul{
-    position: relative;
-    display: none;
-}
-
-.menu ul li{
-    display: block;
-    width: 18%;
-    padding: 10px;
-    background-color: white;
-    font-size: 1rem;
-}
-
-.menu ul li a{
+.navbar a:hover{
     color: #AE0808;
 }
-
-.menu li:hover{
-    background-color: #AE0808;
+.navbar .dropdown-item{
+    color: #AE0808;
+    font-size: 1.5rem;
+    padding: 10px;
 }
-
-.menu li:hover ul{
-    display: block;
-    position: absolute;
+.dropdown-toggle{
+    color: white;
+}
+.navbar-brand{
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+}
+.navbar-nav{
     width: 100%;
-    background-color: white;
+    justify-content: space-evenly;
 }
 
-.menu li:hover li:hover{
-    background-color: rgba(216, 186, 186, 0.719);
-}
 
 /* CSS del main */
 h2{
@@ -135,6 +116,7 @@ h4{
 }
 
 /* CSS Index */
+/*
 .gridContainerIndex{
     display: grid;
     grid-template-areas: 
@@ -146,10 +128,12 @@ h4{
     grid-template-columns: 50% 50%;
 
 }
-
+*/
+/*
 .prox-partido{
     grid-area: prox-partido;
 }
+*/
 .escudos{
     display: flex;
     justify-content: space-around;
@@ -161,25 +145,28 @@ h4{
     align-items: center;
 }
 
+/*
 .info-prox-partido{
     grid-area: info-prox-partido;
     margin-top: 70px;
 
 }
+*/
 .resultados{
-    grid-area: resultados;
+    /*grid-area: resultados;*/
     width: 100%;
 }
 .gridResultados{
     display: grid;
     grid-template-rows: repeat(6,1fr);
     grid-template-columns: repeat(3,1fr);
-    width: 40%;
+    
 }
-
+/*
 .ubicacion{
     grid-area: ubicacion;
 }
+*/
 .map{
     display: flex;
     justify-content: center;
@@ -234,7 +221,7 @@ h4{
     "header header header"
     "titulo-estadio titulo-estadio titulo-estadio"
     "desc-estadio desc-estadio img-estadio"
-    "video-estadio video-estadio video-estadio"
+    "car-estadio video-estadio video-estadio"
     "footer footer footer";
     grid-template-columns: 33% 33% 33%;
 }
@@ -247,7 +234,6 @@ header{
 .desc-estadio{
     grid-area: desc-estadio;
 }
-
 footer{
     grid-area: footer;
 }
@@ -263,6 +249,19 @@ footer{
 .img-estadio img:hover{
     transform: scale(1.2,1.2);
 }
+
+.car-estadio{
+    grid-area: car-estadio;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#carouselEstadio{
+    width: 480px;
+    height: 360px;
+}
+
 
 .video-estadio{
     grid-area: video-estadio;
@@ -339,6 +338,21 @@ footer{
 
 
 /* CSS Formulario*/
+
+.formulario{
+    /*
+    padding: 12px 20px;
+    color: black;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    text-align: justify;
+    line-height: 1;
+    */
+    background-image: url("../Media/equipos/union.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*
 .gridContainerContacto{
     display: grid;
     grid-template-areas: 
@@ -350,16 +364,7 @@ footer{
 .main{
     grid-area: main;
 }
-.formulario{
-    padding: 12px 20px;
-    color: black;
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    text-align: justify;
-    line-height: 1;
-    background-image: url("../Media/equipos/union.png");
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 
 fieldset{
     display: flex;
@@ -391,7 +396,7 @@ textarea{
     padding: 12px 20px;
     margin: 8px 0;
 }
-
+*/
 
 /* CSS del footer */
 footer{
@@ -411,6 +416,7 @@ footer p{
     text-align: justify;
 }
 
+
 .contacto{
     margin-top: 20px;
     margin-bottom: 40px;
@@ -424,6 +430,7 @@ footer p{
     width: 90%;
     justify-content: end;
 }
+
 .redes-sociales .imagen:hover{
     transform: scale(1.5,1.5);
 }
@@ -440,6 +447,7 @@ footer p{
 
 /* vista entre desktop y mobile */
 @media only screen and (min-width:768px) and (max-width:1239px){
+    /*
     .gridContainerIndex{
         display: grid;
         grid-template-areas: 
@@ -470,7 +478,8 @@ footer p{
     footer{
         grid-area: footer;
     }
-
+    */
+    
     /* ESTADIO */
     .gridContainerEstadio{
         display: grid;
@@ -479,6 +488,7 @@ footer p{
         "titulo-estadio"
         "desc-estadio"
         "img-estadio"
+        "car-estadio"
         "video-estadio"
         "footer";     
         grid-template-columns: 100%;
@@ -570,6 +580,7 @@ footer p{
 
 /* vista mobile */
 @media only screen and (min-width:0px) and (max-width:767px){
+    /*
     .gridContainerIndex{
         display: grid;
         grid-template-areas: 
@@ -581,7 +592,8 @@ footer p{
         "footer";
         grid-template-columns: 100%;
     }
-
+    */
+    /*
     header{
         grid-area: header;
     }
@@ -609,10 +621,12 @@ footer p{
     .ubicacion{
         grid-area: ubicacion;
     }
+    */
+    /*
     footer{
         grid-area: footer;
     }
-
+    */
     h1{font-size: 15px;}
     h2{font-size: 22px;}
     h3{font-size: 18px;}
@@ -627,6 +641,7 @@ footer p{
         "titulo-estadio"
         "desc-estadio"
         "img-estadio"
+        "car-estadio"
         "video-estadio"
         "footer";     
         grid-template-columns: 100%;
@@ -639,6 +654,9 @@ footer p{
     }
     .img-estadio{
         grid-area: img-estadio;
+    }
+    .car-estadio{
+        grid-area: car-estadio;
     }
     .video-estadio{
         grid-area: video-estadio;
@@ -701,7 +719,9 @@ footer p{
         height: 200px;
     }
 
+    
     /* CONTACTO */
+    /*
     .reng-form{
         display: flex;
         flex-direction: column;
@@ -709,5 +729,6 @@ footer p{
     textarea{
         width: 100%;
     }
+    */
 
 }
