@@ -36,6 +36,9 @@ header a{
     text-align: justify;
     text-decoration: none;
 }
+header a:hover{
+    color: white;
+}
 
 /*
 nav{
@@ -178,6 +181,7 @@ h4{
 }
 
 /* CSS Noticias */
+/*
 .gridContainerNoticias{
     display: grid;
     grid-template-areas: 
@@ -201,6 +205,23 @@ h4{
 .cuerpo-noticia{
     width: 60%;
 }
+*/
+
+.titulo-noticia{
+    padding: 10px 30px;
+}
+.img-noticia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    row-gap: 10px;
+}
+.img-noticia:hover{
+    transform: scale(1.2,1.2);
+}
+/*
 .img-noticia{
     width: 40%;
     display: flex;
@@ -212,9 +233,10 @@ h4{
 .img-noticia:hover{
     transform: scale(1.2,1.2);
 }
-
+*/
 
 /* CSS Estadio */
+/*
 .gridContainerEstadio{
     display: grid;
     grid-template-areas: 
@@ -237,9 +259,9 @@ header{
 footer{
     grid-area: footer;
 }
-
+*/
 .img-estadio{
-    grid-area: img-estadio;
+    /*grid-area: img-estadio;*/
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -251,7 +273,7 @@ footer{
 }
 
 .car-estadio{
-    grid-area: car-estadio;
+    /*grid-area: car-estadio;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,15 +286,16 @@ footer{
 
 
 .video-estadio{
-    grid-area: video-estadio;
+    /*grid-area: video-estadio;*/
     display: flex;
-    width: 100%;
+    /*width: 100%;*/
     justify-content: center;
     padding: 10px;
 }
 
 
 /* CSS Estadio2*/
+/*
 .gridContainerEstadio2{
     display: grid;
     grid-template-areas: 
@@ -288,8 +311,9 @@ footer{
 .desc-malvicino{
     grid-area: desc-malvicino;
 }
+*/
 .img-malvicino{
-    grid-area: img-malvicino;
+    /*grid-area: img-malvicino;*/
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -301,6 +325,7 @@ footer{
 }
 
 /* CSS Fixture */
+
 .gridContainerFixture{
     display: grid;
     grid-template-areas: 
@@ -315,12 +340,15 @@ footer{
     flex-direction: column;
     width: 60%;
 }
+
+
 .partido{
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .partido:hover{
     background-color: rgb(170, 165, 165);
 }
@@ -410,6 +438,10 @@ footer a{
     color: white;
 }
 
+footer a:hover{
+    color: white;
+}
+
 footer p{
     color: white;
     font-family: 'Edu TAS Beginner', cursive;
@@ -481,6 +513,7 @@ footer p{
     */
     
     /* ESTADIO */
+    /*
     .gridContainerEstadio{
         display: grid;
         grid-template-areas: 
@@ -508,8 +541,9 @@ footer p{
     .video-estadio{
         grid-area: video-estadio;
     }
-
+    */
     /* ESTADIO2 */
+    /*
     .gridContainerEstadio2{
         display: grid;
         grid-template-areas: 
@@ -532,8 +566,9 @@ footer p{
         justify-content: center;
         column-gap: 20px;
     }
-
+    */
     /* NOTICIAS */
+    /*
     .cuerpo-noticia{
         width: 100%;
     }
@@ -543,12 +578,14 @@ footer p{
         column-gap: 10px;
         justify-content: center;
     }
+    */
     .img-noticia img{
         width: 300px;
         height: 200px;
     }
 
     /* FIXTURE */
+    
     .fixture{
         width: 100%;
     }
@@ -563,12 +600,14 @@ footer p{
         width: 40px;
         height: 40px;
     }
+    
     .club1{
         width: 33%;
     }
     .club2{
         width: 33%;
     }
+    
 }
 
 
@@ -634,6 +673,19 @@ footer p{
     p{font-size: 14px;}
 
     /* ESTADIO */
+    .img-estadio img{
+        width: 300px;
+        height: 200px;
+    }
+    .car-estadio img{
+        width: 360px;
+        height: 280px;
+    }
+    #carouselEstadio{
+        width: 360px;
+        height: 280px;
+    }
+    /*
     .gridContainerEstadio{
         display: grid;
         grid-template-areas: 
@@ -661,8 +713,9 @@ footer p{
     .video-estadio{
         grid-area: video-estadio;
     }
-
+    */
     /* ESTADIO2 */
+    /*
     .gridContainerEstadio2{
         display: grid;
         grid-template-areas: 
@@ -682,8 +735,9 @@ footer p{
     .img-malvicino{
         grid-area: img-malvicino;
     }
-
+    */
     /* FIXTURE */
+
     .fixture{
         width: 100%;
     }
@@ -693,6 +747,7 @@ footer p{
         justify-content: space-evenly;
         margin-bottom: 10px;
     }
+
     .partido h4{
         font-size: 10px;
     }
@@ -700,6 +755,7 @@ footer p{
         width: 40px;
         height: 40px;
     }
+
     .club1{
         width: 40%;
     }
@@ -708,12 +764,14 @@ footer p{
     }
 
     /* NOTICIAS */
+    /*
     .cuerpo-noticia{
         width: 100%;
     }
     .img-noticia{
         width: 100%;
     }
+    */
     .img-noticia img{
         width: 300px;
         height: 200px;
