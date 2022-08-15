@@ -40,12 +40,6 @@ header a:hover{
     color: white;
 }
 
-/*
-nav{
-    background-color: #EE0101;
-    padding: 0;
-}
-*/
 
 /* Nav Bootstrap */
 .navbar{
@@ -119,24 +113,7 @@ h4{
 }
 
 /* CSS Index */
-/*
-.gridContainerIndex{
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "prox-partido info-prox-partido"
-    "resultados resultados"
-    "ubicacion ubicacion"
-    "footer footer";
-    grid-template-columns: 50% 50%;
 
-}
-*/
-/*
-.prox-partido{
-    grid-area: prox-partido;
-}
-*/
 .escudos{
     display: flex;
     justify-content: space-around;
@@ -148,15 +125,7 @@ h4{
     align-items: center;
 }
 
-/*
-.info-prox-partido{
-    grid-area: info-prox-partido;
-    margin-top: 70px;
-
-}
-*/
 .resultados{
-    /*grid-area: resultados;*/
     width: 100%;
 }
 .gridResultados{
@@ -165,11 +134,7 @@ h4{
     grid-template-columns: repeat(3,1fr);
     
 }
-/*
-.ubicacion{
-    grid-area: ubicacion;
-}
-*/
+
 .map{
     display: flex;
     justify-content: center;
@@ -181,31 +146,6 @@ h4{
 }
 
 /* CSS Noticias */
-/*
-.gridContainerNoticias{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "noticias"
-    "footer";
-    grid-template-columns: 100%;
-} 
-.noticias{
-    grid-area: noticias;
-    display: flex;
-    flex-direction: column;
-}
-.noticia{
-    display: flex;
-    flex-wrap: wrap;
-}
-.titulo-noticia{
-    width: 100%;
-}
-.cuerpo-noticia{
-    width: 60%;
-}
-*/
 
 .titulo-noticia{
     padding: 10px 30px;
@@ -218,50 +158,13 @@ h4{
     padding: 10px;
     row-gap: 10px;
 }
-.img-noticia:hover{
+.img-noticia img:hover{
     transform: scale(1.2,1.2);
 }
-/*
-.img-noticia{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-    padding: 10px;
-}
-.img-noticia:hover{
-    transform: scale(1.2,1.2);
-}
-*/
 
 /* CSS Estadio */
-/*
-.gridContainerEstadio{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "titulo-estadio titulo-estadio titulo-estadio"
-    "desc-estadio desc-estadio img-estadio"
-    "car-estadio video-estadio video-estadio"
-    "footer footer footer";
-    grid-template-columns: 33% 33% 33%;
-}
-header{
-    grid-area: header;
-}
-.titulo-estadio{
-    grid-area: titulo-estadio;
-}
-.desc-estadio{
-    grid-area: desc-estadio;
-}
-footer{
-    grid-area: footer;
-}
-*/
+
 .img-estadio{
-    /*grid-area: img-estadio;*/
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -273,7 +176,6 @@ footer{
 }
 
 .car-estadio{
-    /*grid-area: car-estadio;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,34 +188,16 @@ footer{
 
 
 .video-estadio{
-    /*grid-area: video-estadio;*/
     display: flex;
-    /*width: 100%;*/
     justify-content: center;
     padding: 10px;
 }
 
 
 /* CSS Estadio2*/
-/*
-.gridContainerEstadio2{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "titulo-malvicino titulo-malvicino titulo-malvicino"
-    "desc-malvicino desc-malvicino img-malvicino"
-    "footer footer footer";
-    grid-template-columns: 33% 33% 33%;
-}
-.titulo-malvicino{
-    grid-area: titulo-malvicino;
-}
-.desc-malvicino{
-    grid-area: desc-malvicino;
-}
-*/
+
 .img-malvicino{
-    /*grid-area: img-malvicino;*/
+
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -347,10 +231,12 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 2s;
 }
 
 .partido:hover{
     background-color: rgb(170, 165, 165);
+    transform: scale(1.1,1.1);
 }
 .club1{
     display: flex;
@@ -368,63 +254,10 @@ footer{
 /* CSS Formulario*/
 
 .formulario{
-    /*
-    padding: 12px 20px;
-    color: black;
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    text-align: justify;
-    line-height: 1;
-    */
     background-image: url("../Media/equipos/union.png");
     background-position: center;
     background-repeat: no-repeat;
 }
-
-/*
-.gridContainerContacto{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    grid-template-columns: 100%;
-}
-.main{
-    grid-area: main;
-}
-
-
-fieldset{
-    display: flex;
-    flex-direction: column;
-}
-
-.reng-form{
-    padding: 10px;
-}
-
-input[type=text]{
-    padding: 6px 10px;
-    margin: 8px 0;
-    border-radius: 4px;
-}
-
-input[type=submit]{
-    background-color: #4caf50;
-    border: none;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-textarea{
-    display: block;
-    padding: 12px 20px;
-    margin: 8px 0;
-}
-*/
 
 /* CSS del footer */
 footer{
@@ -479,106 +312,7 @@ footer p{
 
 /* vista entre desktop y mobile */
 @media only screen and (min-width:768px) and (max-width:1239px){
-    /*
-    .gridContainerIndex{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "prox-partido"
-        "info-prox-partido"
-        "resultados"
-        "ubicacion"
-        "footer";
-        grid-template-columns: 100%;
-    }
-    header{
-        grid-area: header;
-    }
-    .prox-partido{
-        grid-area: prox-partido;
-    }
-    .info-prox-partido{
-        grid-area: info-prox-partido;
-        margin-top: 0px;
-    }
-    .resultados{
-        grid-area: resultados;
-    }
-    .ubicacion{
-        grid-area: ubicacion;
-    }
-    footer{
-        grid-area: footer;
-    }
-    */
     
-    /* ESTADIO */
-    /*
-    .gridContainerEstadio{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "titulo-estadio"
-        "desc-estadio"
-        "img-estadio"
-        "car-estadio"
-        "video-estadio"
-        "footer";     
-        grid-template-columns: 100%;
-    }
-    .titulo-estadio{
-        grid-area: titulo-estadio;
-    }
-    .desc-estadio{
-        grid-area: desc-estadio;
-    }
-    .img-estadio{
-        grid-area: img-estadio;
-        flex-direction: row;
-        justify-content: center;
-        column-gap: 20px;
-    }
-    .video-estadio{
-        grid-area: video-estadio;
-    }
-    */
-    /* ESTADIO2 */
-    /*
-    .gridContainerEstadio2{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "titulo-malvicino"
-        "desc-malvicino"
-        "img-malvicino"
-        "footer";
-        grid-template-columns: 100%;
-    }
-    .titulo-malvicino{
-        grid-area: titulo-malvicino;
-    }
-    .desc-malvicino{
-        grid-area: desc-malvicino;
-    }
-    .img-malvicino{
-        grid-area: img-malvicino;
-        flex-direction: row;
-        justify-content: center;
-        column-gap: 20px;
-    }
-    */
-    /* NOTICIAS */
-    /*
-    .cuerpo-noticia{
-        width: 100%;
-    }
-    .img-noticia{
-        width: 100%;
-        flex-direction: row;
-        column-gap: 10px;
-        justify-content: center;
-    }
-    */
     .img-noticia img{
         width: 300px;
         height: 200px;
@@ -612,60 +346,9 @@ footer p{
 
 
 
-
-
-
-
-
 /* vista mobile */
 @media only screen and (min-width:0px) and (max-width:767px){
-    /*
-    .gridContainerIndex{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "prox-partido"
-        "info-prox-partido"
-        "resultados"
-        "ubicacion"
-        "footer";
-        grid-template-columns: 100%;
-    }
-    */
-    /*
-    header{
-        grid-area: header;
-    }
-    .menu{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .menu li{
-        font-size: 1rem;
-        width: 33.3%;
-    }
-    .menu ul li{
-        width: 25%;
-    }
-    .prox-partido{
-        grid-area: prox-partido;
-    }
-    .info-prox-partido{
-        grid-area: info-prox-partido;
-        margin-top: 0px;
-    }
-    .resultados{
-        grid-area: resultados;
-    }
-    .ubicacion{
-        grid-area: ubicacion;
-    }
-    */
-    /*
-    footer{
-        grid-area: footer;
-    }
-    */
+    
     h1{font-size: 15px;}
     h2{font-size: 22px;}
     h3{font-size: 18px;}
@@ -685,57 +368,7 @@ footer p{
         width: 360px;
         height: 280px;
     }
-    /*
-    .gridContainerEstadio{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "titulo-estadio"
-        "desc-estadio"
-        "img-estadio"
-        "car-estadio"
-        "video-estadio"
-        "footer";     
-        grid-template-columns: 100%;
-    }
-    .titulo-estadio{
-        grid-area: titulo-estadio;
-    }
-    .desc-estadio{
-        grid-area: desc-estadio;
-    }
-    .img-estadio{
-        grid-area: img-estadio;
-    }
-    .car-estadio{
-        grid-area: car-estadio;
-    }
-    .video-estadio{
-        grid-area: video-estadio;
-    }
-    */
-    /* ESTADIO2 */
-    /*
-    .gridContainerEstadio2{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "titulo-malvicino"
-        "desc-malvicino"
-        "img-malvicino"
-        "footer";
-        grid-template-columns: 100%;
-    }
-    .titulo-malvicino{
-        grid-area: titulo-malvicino;
-    }
-    .desc-malvicino{
-        grid-area: desc-malvicino;
-    }
-    .img-malvicino{
-        grid-area: img-malvicino;
-    }
-    */
+   
     /* FIXTURE */
 
     .fixture{
@@ -764,29 +397,11 @@ footer p{
     }
 
     /* NOTICIAS */
-    /*
-    .cuerpo-noticia{
-        width: 100%;
-    }
-    .img-noticia{
-        width: 100%;
-    }
-    */
+
     .img-noticia img{
         width: 300px;
         height: 200px;
     }
 
-    
-    /* CONTACTO */
-    /*
-    .reng-form{
-        display: flex;
-        flex-direction: column;
-    }
-    textarea{
-        width: 100%;
-    }
-    */
 
 }
