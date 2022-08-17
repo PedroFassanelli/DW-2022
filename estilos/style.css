@@ -1,407 +1,279 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-
-/* CSS del header */
-header{
-    background-color: #AE0808; 
-}
-
-.encabezado{
+header {
+  background-color: #AE0808; }
+  header .encabezado {
     display: flex;
     align-items: center;
-    padding: 10px;
-}
-
-.encabezado a{
-    margin: 10px;
-}
-
-h1{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    line-height: 2;
-    font-size: 3 rem;
-    text-align: justify;
-}
-
-header a{
+    padding: 10px; }
+    header .encabezado a {
+      margin: 10px; }
+  header a {
     color: white;
     font-family: 'Roboto', sans-serif;
     line-height: 1;
     font-size: 2 rem;
     text-align: justify;
-    text-decoration: none;
-}
-header a:hover{
-    color: white;
-}
-
-
-/* Nav Bootstrap */
-.navbar{
+    text-decoration: none; }
+    header a:hover {
+      color: white; }
+  header .navbar {
     text-align: center;
     padding: 10px;
     font-size: 2rem;
-    background-color: #EE0101;
-}
-.navbar a{
-    color: white;
-}
-.navbar a:hover{
-    color: #AE0808;
-}
-.navbar .dropdown-item{
-    color: #AE0808;
-    font-size: 1.5rem;
-    padding: 10px;
-}
-.dropdown-toggle{
-    color: white;
-}
-.navbar-brand{
-    text-align: center;
-    padding: 10px;
-    font-size: 2rem;
-}
-.navbar-nav{
+    background-color: #EE0101; }
+    header .navbar a {
+      color: white; }
+      header .navbar a:hover {
+        color: #AE0808; }
+    header .navbar .dropdown-item {
+      color: #AE0808;
+      font-size: 1.5rem;
+      padding: 10px; }
+    header .navbar .dropdown-toggle {
+      color: white; }
+    header .navbar .navbar-brand {
+      text-align: center;
+      padding: 10px;
+      font-size: 2rem; }
+    header .navbar .navbar-nav {
+      width: 100%;
+      justify-content: space-evenly; }
+
+/* FUENTES */
+h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+  font-size: 3 rem;
+  text-align: justify; }
+
+h2 {
+  padding: 10px 20px;
+  color: #AE0808;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+  font-size: 2rem;
+  text-align: justify;
+  margin-top: 5px; }
+
+h3 {
+  padding: 10px 20px;
+  color: #AE0808;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-top: 5px; }
+
+h4 {
+  padding: 12px 20px;
+  color: black;
+  font-family: 'Open Sans', sans-serif; }
+
+p {
+  padding: 12px 20px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 1.2;
+  text-align: justify; }
+
+/* INDEX */
+.index .escudos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.index .equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.index .resultados {
+  width: 100%; }
+
+.index .gridResultados {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr); }
+
+.index .map {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+  .index .map iframe {
     width: 100%;
-    justify-content: space-evenly;
-}
+    height: 400px; }
 
+/* NOTICIAS */
+.noticias .titulo-noticia {
+  padding: 10px 30px; }
 
-/* CSS del main */
-h2{
-    padding: 10px 20px;
-    color: #AE0808;
-    font-family: 'Roboto', sans-serif;
-    line-height: 2;
-    font-size: 2rem;
-    text-align: justify;
-    margin-top: 5px;
-}
-h3{
-    padding: 10px 20px;
-    color: #AE0808;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-top: 5px;
-}
+.noticias .img-noticia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  row-gap: 10px; }
+  .noticias .img-noticia img:hover {
+    transform: scale(1.2, 1.2); }
 
-main{
-    background-color: white;
-}
+/* ESTADIO */
+.estadio .img-estadio {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  row-gap: 20px; }
+  .estadio .img-estadio img:hover {
+    transform: scale(1.2, 1.2); }
 
-p{
-    padding: 12px 20px;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
-    font-size: 1.2;
-    text-align: justify;
-}
-
-h4{
-    padding: 12px 20px;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* CSS Index */
-
-.escudos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.equipo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.resultados{
-    width: 100%;
-}
-.gridResultados{
-    display: grid;
-    grid-template-rows: repeat(6,1fr);
-    grid-template-columns: repeat(3,1fr);
-    
-}
-
-.map{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-.map iframe{
-    width: 100%;
-    height: 400px;
-}
-
-/* CSS Noticias */
-
-.titulo-noticia{
-    padding: 10px 30px;
-}
-.img-noticia{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    row-gap: 10px;
-}
-.img-noticia img:hover{
-    transform: scale(1.2,1.2);
-}
-
-/* CSS Estadio */
-
-.img-estadio{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    align-items: center;
-    row-gap: 20px;
-}
-.img-estadio img:hover{
-    transform: scale(1.2,1.2);
-}
-
-.car-estadio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-#carouselEstadio{
+.estadio .car-estadio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+  .estadio .car-estadio #carouselEstadio {
     width: 480px;
-    height: 360px;
-}
+    height: 360px; }
 
+/* ESTADIO2 */
+.estadio2 .img-malvicino {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px; }
+  .estadio2 .img-malvicino img:hover {
+    transform: scale(1.2, 1.2); }
 
-.video-estadio{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-
-/* CSS Estadio2*/
-
-.img-malvicino{
-
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-}
-.img-malvicino img:hover{
-    transform: scale(1.2,1.2);
-}
-
-/* CSS Fixture */
-
-.gridContainerFixture{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "fixture"
-    "footer";
-    grid-template-columns: 100%;
-}
-.fixture{
-    grid-area: fixture;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
-
-
-.partido{
+/* FIXTURE */
+.fixture {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 10px; }
+  .fixture .partido {
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 2s;
-}
-
-.partido:hover{
-    background-color: rgb(170, 165, 165);
-    transform: scale(1.1,1.1);
-}
-.club1{
+    transition: all 2s; }
+    .fixture .partido:hover {
+      background-color: #aaa5a5;
+      transform: scale(1.1, 1.1); }
+  .fixture .club1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 33%;
-}
-.club2{
+    width: 33%; }
+  .fixture .club2 {
     display: flex;
     align-items: center;
-    width: 33%;
-}
+    width: 33%; }
 
+/* FORMULARIO */
+.formulario {
+  background-image: url("../Media/equipos/union.png");
+  background-position: center;
+  background-repeat: no-repeat; }
 
-/* CSS Formulario*/
+/* MEDIAS QUERIES */
+/* vista entre desktop y mobile */
+@media only screen and (min-width: 768px) and (max-width: 1239px) {
+  /* NOTICIAS */
+  .img-noticia img {
+    width: 300px;
+    height: 200px; }
+  /* FIXTURE */
+  .fixture {
+    width: 100%; }
+    .fixture .partido {
+      padding: 0px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-bottom: 10px; }
+      .fixture .partido img {
+        width: 40px;
+        height: 40px; }
+    .fixture .club1 {
+      width: 33%; }
+    .fixture .club2 {
+      width: 33%; } }
 
-.formulario{
-    background-image: url("../Media/equipos/union.png");
-    background-position: center;
-    background-repeat: no-repeat;
-}
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  h1 {
+    font-size: 15px; }
+  h2 {
+    font-size: 22px; }
+  h3 {
+    font-size: 18px; }
+  h4 {
+    font-size: 14px; }
+  p {
+    font-size: 14px; }
+  /* ESTADIO */
+  .img-estadio img {
+    width: 300px;
+    height: 200px; }
+  .car-estadio img {
+    width: 360px;
+    height: 280px; }
+  #carouselEstadio {
+    width: 360px;
+    height: 280px; }
+  /* FIXTURE */
+  .fixture {
+    width: 100%; }
+    .fixture .partido {
+      padding: 0px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-bottom: 10px; }
+      .fixture .partido h4 {
+        font-size: 10px; }
+      .fixture .partido img {
+        width: 40px;
+        height: 40px; }
+    .fixture .club1 {
+      width: 40%; }
+    .fixture .club2 {
+      width: 40%; }
+  /* NOTICIAS */
+  .img-noticia img {
+    width: 300px;
+    height: 200px; } }
 
-/* CSS del footer */
-footer{
-    background-color: #AE0808;
-    padding: 20px 0 0 0;
-    display: flex;
-}
-
-footer a{
+footer {
+  background-color: #AE0808;
+  padding: 20px 0 0 0;
+  display: flex; }
+  footer a {
     text-decoration: none;
-    color: white;
-}
-
-footer a:hover{
-    color: white;
-}
-
-footer p{
+    color: white; }
+    footer a:hover {
+      color: white; }
+  footer p {
     color: white;
     font-family: 'Edu TAS Beginner', cursive;
-    text-align: justify;
-}
-
-
-.contacto{
+    text-align: justify; }
+  footer .contacto {
     margin-top: 20px;
     margin-bottom: 40px;
-    display: flex;
-}
-
-.redes-sociales{
+    display: flex; }
+  footer .redes-sociales {
     margin-top: 20px;
     margin-bottom: 40px;
     display: flex;
     width: 90%;
-    justify-content: end;
-}
-
-.redes-sociales .imagen:hover{
-    transform: scale(1.5,1.5);
-}
-
-.imagen{
-    padding: 10px;
-}
-
-/* MEDIAS QUERIES */
-/* vista desktop */
-@media only screen and (min-width: 1240px){
-
-}
-
-/* vista entre desktop y mobile */
-@media only screen and (min-width:768px) and (max-width:1239px){
-    
-    .img-noticia img{
-        width: 300px;
-        height: 200px;
-    }
-
-    /* FIXTURE */
-    
-    .fixture{
-        width: 100%;
-    }
-    .partido{
-        padding: 0px;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 10px;
-    }
-    
-    .partido img{
-        width: 40px;
-        height: 40px;
-    }
-    
-    .club1{
-        width: 33%;
-    }
-    .club2{
-        width: 33%;
-    }
-    
-}
-
-
-
-/* vista mobile */
-@media only screen and (min-width:0px) and (max-width:767px){
-    
-    h1{font-size: 15px;}
-    h2{font-size: 22px;}
-    h3{font-size: 18px;}
-    h4{font-size: 14px;}
-    p{font-size: 14px;}
-
-    /* ESTADIO */
-    .img-estadio img{
-        width: 300px;
-        height: 200px;
-    }
-    .car-estadio img{
-        width: 360px;
-        height: 280px;
-    }
-    #carouselEstadio{
-        width: 360px;
-        height: 280px;
-    }
-   
-    /* FIXTURE */
-
-    .fixture{
-        width: 100%;
-    }
-    .partido{
-        padding: 0px;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-bottom: 10px;
-    }
-
-    .partido h4{
-        font-size: 10px;
-    }
-    .partido img{
-        width: 40px;
-        height: 40px;
-    }
-
-    .club1{
-        width: 40%;
-    }
-    .club2{
-        width: 40%;
-    }
-
-    /* NOTICIAS */
-
-    .img-noticia img{
-        width: 300px;
-        height: 200px;
-    }
-
-
-}
+    justify-content: end; }
+    footer .redes-sociales .imagen {
+      padding: 10px; }
+      footer .redes-sociales .imagen:hover {
+        transform: scale(1.5, 1.5); }

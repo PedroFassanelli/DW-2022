@@ -1,0 +1,35 @@
+footer{
+    background-color: #AE0808;
+    padding: 20px 0 0 0;
+    display: flex;
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: white;
+        }
+    }
+    p{
+        color: white;
+        font-family: 'Edu TAS Beginner', cursive;
+        text-align: justify;
+    }
+    .contacto{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+    }
+    .redes-sociales{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        width: 90%;
+        justify-content: end;
+        .imagen{
+            padding: 10px;
+            &:hover{
+                transform: scale(1.5,1.5);
+            }
+        }
+    }
+}
