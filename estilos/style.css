@@ -225,6 +225,7 @@ p {
 .estadio .video-estadio {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 /* ESTADIO2 */
@@ -330,21 +331,21 @@ p {
     font-size: 18px;
   }
   h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
   p {
     font-size: 14px;
   }
   /* ESTADIO */
-  .img-estadio img {
+  .estadio .img-estadio img {
     width: 300px;
     height: 200px;
   }
-  .car-estadio img {
+  .estadio .car-estadio img {
     width: 360px;
     height: 280px;
   }
-  #carouselEstadio {
+  .estadio .car-estadio #carouselEstadio {
     width: 360px;
     height: 280px;
   }

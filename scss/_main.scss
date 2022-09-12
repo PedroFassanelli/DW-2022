@@ -89,6 +89,7 @@ $bgnoticiapar:rgb(204, 189, 189);
     .video-estadio{
         display: flex;
         justify-content: center;
+        margin-bottom: 10px;
     }
 }
 
@@ -196,21 +197,28 @@ $bgnoticiapar:rgb(204, 189, 189);
     h1{font-size: 15px;}
     h2{font-size: 22px;}
     h3{font-size: 18px;}
-    h4{font-size: 14px;}
+    h4{font-size: 18px;}
     p{font-size: 14px;}
 
     /* ESTADIO */
-    .img-estadio img{
-        width: 300px;
-        height: 200px;
-    }
-    .car-estadio img{
-        width: 360px;
-        height: 280px;
-    }
-    #carouselEstadio{
-        width: 360px;
-        height: 280px;
+
+    .estadio{
+        .img-estadio{
+            img{
+                width: 300px;
+                height: 200px;
+            }
+        }
+        .car-estadio{
+            img{
+                width: 360px;
+                height: 280px;
+            }
+            #carouselEstadio{
+                width: 360px;
+                height: 280px;
+            }
+        }
     }
 
     /* FIXTURE */
